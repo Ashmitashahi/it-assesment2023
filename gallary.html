@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+     <title> project</title>
+            <link rel="stylesheet"href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <body>
+                <section class="links">
+                <a href="index.html">HOME</a>
+                <a href="about us .html">ABOUT</a>
+                <a href="gallary.html">GALLARY</a>
+                <a href="course.html">COURSE</a>
+                <a href="blog.html">BLOG</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </section>
+                <div class="text.box" >
+        <h1> Our GALLARY</h1>
+        <body>
+            <div class="full-img" id="fullImgbox">
+                <img src="college.jpeg" id="fullImg">
+                <span onclick="closefullImg()">X</span>
+            </div>
+            <div class="gallary">
+                <img src="college.jpeg" onclick="openfullImg(this.src)">
+                <img src="1bul.jfif"  onclick="openfullImg(this.src)">
+                <img src="bul1.jpg"  onclick="openfullImg(this.src)">
+                <img src="newyork.jpg"  onclick="openfullImg(this.src)">
+                <img src="washington.jpeg"  onclick="openfullImg(this.src)">
+                <img src="library.jpeg"  onclick="openfullImg(this.src)">
+                <img src="img4.jfif"  onclick="openfullImg(this.src)">
+                <img src="img5.jfif"  onclick="openfullImg(this.src)">
+                <img src="img6.jfif"  onclick="openfullImg(this.src)">
+                <img src="img7.jfif"  onclick="openfullImg(this.src)">
+                <img src="img8.jfif"  onclick="openfullImg(this.src)">
+                <img src="staff.jpg"  onclick="openfullImg(this.src)">
+                <img src="pic1.jpeg"  onclick="openfullImg(this.src)">
+                <img src="pic4.jpg"  onclick="openfullImg(this.src)">
+            </div>
+            <script>
+                var fullImgbox = document.getElementById("fullImgbox");
+                var fullImg = document.getElementById("fullImg");
+
+                function openfullImg(pic){
+                    fullImgbox.style.display="flex";
+                    fullImg.src=pic;
+                }
+                function closefullImg(){
+                    fullImgbox.style.display="none";
+
+                }
+            </script>
+        </body>
